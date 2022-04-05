@@ -17,5 +17,6 @@ Rails.application.routes.draw do
   delete 'lists/:id' => 'lists#destroy', as: 'destroy_list'
   
   get '/top'=>'homes#top'
+  resources :lists
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
